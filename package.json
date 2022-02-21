@@ -53,12 +53,13 @@
     "jest": "^27.5.1"
   },
   "scripts": {
-    "clean": "lerna clean --yes",
+    "clean": "lerna clean --yes && yarn clean-dist",
     "bootstrap": "yarn clean && lerna bootstrap --use-workspaces",
-    "build:all": "lerna run build --stream",
+    "build": "lerna run build --stream",
     "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "clean-dist": "yarn lerna exec -- rimraf dist"
+    "clean-dist": "yarn lerna exec -- rimraf dist",
+    "release": "yarn bootstrap && yarn build && lerna publish"
   },
   "dependencies": {
     "react": "^17.0.2",
