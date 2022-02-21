@@ -4,8 +4,8 @@ import { FlexboxProps } from 'styled-system';
 export type FlexProps = FlexboxProps;
 
 /**
- * Primary UI component for appying flex behaviour
+ * Flex component
  */
-export const Flex = styled.div<FlexProps>({
-  display: 'flex',
-});
+export const Flex = styled.div<FlexProps>`
+  display: flex;
+`;

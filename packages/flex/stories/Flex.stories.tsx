@@ -1,16 +1,28 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { Flex, FlexProps } from '../src';
+import { Flex, FlexProps } from '../index';
 
 export default {
   title: 'Layout/Flex',
   component: Flex,
 } as Meta;
 
-const Template: Story<FlexProps> = (args: FlexProps) => <Flex {...args}>DEV</Flex>;
+const Template: Story<FlexProps> = (args: FlexProps) => (
+  <Flex {...args} flexDirection={'column'}>
+    Test Message Here
+  </Flex>
+);
 
-export const Default = Template.bind({});
+export const k = () => {
+  return <Flex flexDirection={'row'}>zzz</Flex>;
+};
+// export const Default = Template.bind({});
+export const Center = Template.bind({});
+Center.args = {
+  flexDirection: 'row',
+  justifyContent: 'center',
+};
 
 // import React from 'react';
 // import { Story, Meta } from '@storybook/react';

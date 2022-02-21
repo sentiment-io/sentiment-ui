@@ -1,0 +1,39 @@
+{
+  "name": "@sentiment-ui/button",
+  "version": "0.0.0",
+  "description": "Button Component",
+  "keywords": [
+    "sentiment-ui",
+    "react",
+    "component",
+    "button"
+  ],
+  "author": "Sergio Viula <sergio.viula@sentiment.io",
+  "homepage": "https://github.com/sentiment-io/sentiment-ui#readme",
+  "license": "MIT",
+  "main": "dist/flex.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentiment-io/sentiment-ui.git",
+    "directory": "packages/button"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/sentiment-io/sentiment-ui/issues"
+  },
+  "devDependencies": {
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  }
+}
