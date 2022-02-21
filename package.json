@@ -11,6 +11,36 @@
   "author": "Sergio Viula <sergio.viula@sentiment.io",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.9.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build:all": "npx lerna run build --stream",
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@jest/types": "^27.5.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.19",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.23",
+    "@types/styled-system": "^5.1.15",
+    "jest": "^27.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3",
+    "styled-system": "^5.1.5"
   }
 }

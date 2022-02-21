@@ -1,0 +1,40 @@
+{
+  "name": "@sentiment-ui/theme",
+  "version": "0.0.0",
+  "description": "theme Component",
+  "keywords": [
+    "sentiment-ui",
+    "react",
+    "component",
+    "theme"
+  ],
+  "author": "Sergio Viula <sergio.viula@sentiment.io",
+  "homepage": "https://github.com/sentiment-io/sentiment-ui#readme",
+  "license": "MIT",
+  "main": "dist/theme.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentiment-io/sentiment-ui.git",
+    "directory": "packages/theme"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/sentiment-io/sentiment-ui/issues"
+  },
+  "devDependencies": {
+    "react": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  }
+}
