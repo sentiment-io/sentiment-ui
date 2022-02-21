@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { Button } from '../index';
+
 import theme from '../../theme/src/themes/default';
 
 test('should have disabled attribute', () => {
@@ -10,5 +11,9 @@ test('should have disabled attribute', () => {
       <Button disabled> ddd</Button>
     </ThemeProvider>,
   );
+  expect(container).toBeInTheDocument();
+  const but = getByRole('button');
+
   expect(getByRole('button').hasAttribute('disabled')).toBe(true);
+  expect(but).toBeDisabled();
 });
