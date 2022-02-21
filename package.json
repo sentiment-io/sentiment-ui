@@ -1,0 +1,16 @@
+{
+  "name": "sentiment-ui",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentiment-io/sentiment-ui.git"
+  },
+  "author": "Sergio Viula <sergio.viula@sentiment.io",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
